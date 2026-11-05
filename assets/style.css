@@ -18,6 +18,7 @@ nav a{text-decoration:none;font-weight:500;padding:6px 0}nav a:hover{text-decora
 nav a[aria-current]{text-decoration:underline;text-decoration-thickness:3px;text-decoration-color:var(--y)}
 .menu{display:none;font:inherit;font-weight:600;padding:8px 16px;border:2px solid var(--ink);border-radius:6px;background:transparent;cursor:pointer}
 .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center;padding:56px 0 48px}
+.hero picture{justify-self:center;width:100%;max-width:380px}
 .hero h1{font-size:clamp(3rem,9vw,6rem);line-height:.92;letter-spacing:-.04em;margin-bottom:.3em}
 .hero p{max-width:34em;font-size:1.2rem;color:var(--muted)}
 .hero img{width:100%;max-width:380px;justify-self:center}
@@ -36,6 +37,7 @@ section{padding:64px 0}
 .team{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:18px 28px;margin:0 0 36px}
 .person{display:flex;gap:14px;align-items:center}
 .av{flex:none;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font:700 1.1rem "Bricolage Grotesque",sans-serif;background:#fff;border:3px solid var(--k)}
+img.av{object-fit:cover;background:#e9ecf1}
 .person b{display:block;line-height:1.25}.person span{font-size:.9rem;color:var(--muted)}
 form{display:grid;gap:14px;max-width:620px}
 label{display:grid;gap:4px;font-weight:600;font-size:.95rem}
@@ -51,12 +53,26 @@ input,select,textarea{font:inherit;padding:10px 12px;border:1.5px solid #8f97a5;
 .post figure{margin:28px 0}.post img{border-radius:6px}.post figcaption{font-size:.9rem;color:var(--muted)}
 footer{background:var(--ink);color:#c3cad6;padding:36px 0;font-size:.95rem}footer .wrap{display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center}footer a{color:#fff}footer img{height:96px;width:auto;filter:invert(1)}footer div{flex:1 1 260px}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+[hidden]{display:none!important}
+.row h2{font-size:1.35rem;margin:0 0 .2em}
+.row h2 a{text-decoration:none}
+.row h2 a:hover{text-decoration:underline}
+.hero h1 span{display:block;font-size:clamp(1rem,2.6vw,1.6rem);line-height:1.2;letter-spacing:0;color:var(--muted);margin-top:.35em;font-weight:600}
+.breadcrumb{font-size:.92rem;color:var(--muted);margin-bottom:18px}
+.breadcrumb a{color:var(--muted)}
+.profile{display:flex;gap:18px;align-items:center;margin:24px 0}
+.profile .av{width:96px;height:96px;font-size:1.4rem}
+.profile b{display:block;font-size:1.15rem}
+.profile span{color:var(--muted)}
+.profile-page{max-width:760px}
+.links{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px 18px;margin:16px 0 32px}
+.links a{font-weight:600}
 @media (max-width:760px){
   body{font-size:16.5px}
   .menu{display:block}
   nav{display:none;flex-direction:column;width:100%;gap:0;padding-bottom:8px}nav.open{display:flex}
   nav a{padding:12px 0;border-top:1px solid var(--line);font-size:1.05rem}
-  .hero,.cols{grid-template-columns:1fr}.hero{padding-top:32px}.hero img{max-width:240px;grid-row:1}
+  .hero,.cols{grid-template-columns:1fr}.hero{padding-top:32px}.hero img{max-width:240px;grid-row:1}.hero picture{grid-row:1;max-width:240px}
   .eq{grid-template-columns:1fr;padding-left:16px}.eq img{grid-row:auto;max-width:280px;margin-bottom:14px}
   .row{grid-template-columns:1fr}section{padding:48px 0}.page{padding:36px 0 56px}
   .btn{display:block;text-align:center;margin-right:0}

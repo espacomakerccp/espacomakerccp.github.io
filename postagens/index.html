@@ -9,17 +9,137 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
+  <link rel="canonical" href="https://espacomakerccp.github.io/postagens/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Espaço Maker UENP" />
+  <meta property="og:url" content="https://espacomakerccp.github.io/postagens/" />
+  <meta property="og:title" content="Postagens – Espaço Maker UENP Cornélio Procópio" />
+  <meta property="og:description" content="Projetos, cursos e oficinas feitos no Espaço Maker da UENP – Campus Cornélio Procópio." />
+  <meta property="og:image" content="https://espacomakerccp.github.io/assets/img/og-1200x630.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Espaço Maker UENP – Campus Cornélio Procópio" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Postagens – Espaço Maker UENP Cornélio Procópio" />
+  <meta name="twitter:description" content="Projetos, cursos e oficinas feitos no Espaço Maker da UENP – Campus Cornélio Procópio." />
+  <meta name="twitter:image" content="https://espacomakerccp.github.io/assets/img/og-1200x630.jpg" />
+  <meta name="theme-color" content="#14181f" />
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://espacomakerccp.github.io/postagens/#webpage",
+        "url": "https://espacomakerccp.github.io/postagens/",
+        "name": "Postagens – Espaço Maker UENP Cornélio Procópio",
+        "description": "Projetos, cursos e oficinas feitos no Espaço Maker da UENP – Campus Cornélio Procópio.",
+        "isPartOf": {
+          "@id": "https://espacomakerccp.github.io/#website"
+        },
+        "inLanguage": "pt-BR",
+        "hasPart": [
+          {
+            "@type": "BlogPosting",
+            "headline": "Cursos de extensão já oferecidos no Espaço Maker",
+            "url": "https://espacomakerccp.github.io/postagens/cursos-anteriores.html",
+            "datePublished": "2026-10-28"
+          },
+          {
+            "@type": "BlogPosting",
+            "headline": "Bem-vindo às postagens do Espaço Maker",
+            "url": "https://espacomakerccp.github.io/postagens/bem-vindo.html",
+            "datePublished": "2026-10-28"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": "https://espacomakerccp.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Postagens",
+            "item": "https://espacomakerccp.github.io/postagens/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
-<body data-root="../">
-<header class="top" id="topo"></header>
+<body>
+  <header class="top" id="topo">
+    <div class="bar">
+      <a class="brand" href="../index.html">
+        <picture>
+          <source srcset="../assets/img/logo-sm.webp" type="image/webp" />
+          <img src="../assets/img/logo-sm.png" alt="" width="48" height="45" />
+        </picture>
+        <span>Espaço Maker<small>UENP – Campus Cornélio Procópio</small></span>
+      </a>
+      <button class="menu" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav id="nav" aria-label="Principal">
+        <a href="../equipamentos.html">Equipamentos</a>
+        <a href="../colaboradores.html">Colaboradores</a>
+        <a href="../labtecog.html">LabTeCog</a>
+        <a href="../postagens/">Postagens</a>
+        <a href="../agendamento.html">Agendamento</a>
+      </nav>
+    </div>
+  </header>
 <main class="wrap" style="padding-top:56px;padding-bottom:64px">
   <h1 style="font-size:clamp(2.4rem,7vw,4rem)">Postagens</h1>
   <p style="color:var(--muted);max-width:36em">Projetos, cursos e oficinas feitos no Espaço Maker.</p>
   <div class="chips" id="filtros" role="group" aria-label="Filtrar por categoria"></div>
-  <div class="posts" id="lista-posts"></div>
+  <div class="posts" id="lista-posts">
+    <article class="row" data-categoria="Cursos">
+      <time datetime="2026-10-28">28 de outubro de 2026</time>
+      <div>
+        <h2><a href="cursos-anteriores.html">Cursos de extensão já oferecidos no Espaço Maker</a></h2>
+        <p>Relembre os cursos realizados no laboratório: Arduino e Eletrônica, Corte a Laser, Programação em C,
+          Robótica, Pensamento Computacional e Design.</p>
+        <span class="tag">Cursos</span>
+      </div>
+    </article>
+    <article class="row" data-categoria="Projetos">
+      <time datetime="2026-10-28">28 de outubro de 2026</time>
+      <div>
+        <h2><a href="bem-vindo.html">Bem-vindo às postagens do Espaço Maker</a></h2>
+        <p>Aqui vamos mostrar o que é criado no laboratório: peças impressas em 3D, cortes a laser, recortes de vinil
+          e oficinas.</p>
+        <span class="tag">Projetos</span>
+      </div>
+    </article>
+  </div>
+  <p id="sem-posts" hidden>Nenhuma postagem nesta categoria ainda.</p>
 </main>
-<footer id="rodape"></footer>
-<script src="posts.js"></script>
+  <footer id="rodape">
+    <div class="wrap">
+      <img src="../assets/img/logo-cristo.svg" alt="Logo do Espaço Maker UENP, com o Cristo de Cornélio Procópio" width="77" height="96" />
+      <div>
+        <b style="color:#fff">Espaço Maker – UENP</b><br />
+        Campus Cornélio Procópio · Bloco H, salas H22 e H17<br />
+        PR 160, Km 0 (saída para Leópolis), Cornélio Procópio – PR
+      </div>
+      <div>
+        <a href="https://www.instagram.com/uenp_maker_ccp/">@uenp_maker_ccp</a> ·
+        <a href="https://www.youtube.com/@espacomakerccp">YouTube</a> ·
+        <a href="https://linktr.ee/espacomakerccp">Linktree</a><br />
+        <a href="https://github.com/espacomakerccp/">GitHub</a> ·
+        <a href="mailto:espacomaker.agendamentos.ccp@uenp.edu.br">espacomaker.agendamentos.ccp@uenp.edu.br</a><br />
+        <a href="https://uenp.edu.br/ccp">uenp.edu.br/ccp</a>
+      </div>
+    </div>
+  </footer>
 <script src="../assets/site.js"></script>
 </body>
 </html>
